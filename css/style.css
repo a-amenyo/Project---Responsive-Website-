@@ -14,6 +14,7 @@ body p{
     background-color: seagreen;
     color: white;
     height: auto;
+    
 }
 ul{
   text-align: center;
@@ -78,6 +79,9 @@ a{
     color: whitesmoke;
     font-size: 20px;
   }
+  /* button:hover{
+    transform: rotate();
+  } */
 
   .single-service {
     text-align: center;
@@ -97,43 +101,135 @@ a{
     width:500px;
   }
   .snacks p{
-    text-align: center;
+  text-align: center;
   font-family:  SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: bold;
+  margin-bottom: 0px;
+  padding: 5px;
   }
   .caffe p {
   text-align: center;
   font-family:  SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: bold;
+  margin-bottom: 0px;
+  padding: 5px;
   }
   .social-media{
+    /* padding: 5px; */
+    margin: 0px auto auto auto;
     text-align: center;
-    margin: 0px;
-    padding: 5px;
+    /* border: 1px solid red; */
+    padding: 0px;
   
   }
   .social-media h2{
     visibility: hidden;
     text-align: center;
-    margin: 0px;
+    margin: auto;
     padding: 0px;
     margin-bottom: 0px;
     
   }
   #img{
-    margin-left: 50px;
+    margin-top: 0px;
+    padding-top: 0px;
     width: 30px;
+    margin: auto;
     cursor: pointer;
+  }
+  /* #img:hover{
+    border-radius: 30px;
+    background-color: seagreen;
+  } */
+  /* Forms  */
+  .form {
+    /* border: 2px solid red; */
+    margin: auto;
+    padding: 20px;
+    place-content: center;
+    /* border-radius: 20px; */
+  }
+  
+  .form h3 {
+    font-family:  SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0px 10px 20px;
+    width: 100%;
+  }
+  .form-int{
+      font-size: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 50px;
+  }
+  .form-int div input{
+      font-size: 16px;
+      outline: none;
+      border: none;
+      border-bottom: 2px solid seagreen;
+      padding: 5px;
+      margin: auto;
+      width: 100%;
+  }
+  
+  .textArea{
+      display: grid;
+      grid-column: 1/3;
+      text-align: center;
+  }
+  .textArea textarea{
+      padding: 10px;
+      font-size: 16px;
+      outline: none;
+      border: none;
+      margin-bottom: 20px;
+      border-bottom: 2px solid seagreen;
+      
+  }
+ #submit{
+  place-content: center;
+  border:none;
+  font-family:  SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  background-color: seagreen;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+ }
+ .submit{
+  padding: auto;
+  margin: auto;
+  text-align: center;
+ }
+  
+  
+  footer{
+    background-color: whitesmoke;
   }
   footer p{
     text-align: center;
     font-family:  SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  
+    color: seagreen;
+    font-weight: bold;
+    
+  }
+  hr{
+    margin-top: 0px;
   }
   
+
+  /* Media Queries  */
   @media screen and (min-width: 700px) {
     .nav ul {
       text-align: center;
+    }
+    .nav{
+      position: fixed;
+      width: 100%;
     }
   
     .nav ul li {
@@ -149,18 +245,22 @@ a{
       margin-right: 700px;
       margin-top: 5px;
     }
+    .image-area{
+      background-image: url('../images/home3.jpg');
+      padding-top: 200px;
+      padding-bottom: 200px;
+      background-position: center center;
+      background-size: auto auto ;
+      margin: 0px;
+  }
   
     .single-service {
       width: 50%;
       float: left;
     }
     .social-media{
-      display: inline-block;
-      width: 100%;
       padding: 5px;
-      text-align: center;
-      margin-bottom: 0px;
-    
+      margin: auto;
     }
     .social-media h2{
       visibility: visible;
@@ -176,12 +276,78 @@ a{
       cursor: pointer;
   
     }
+    .form {
+      width: 500px;
+      /* margin-right: 100px;
+      margin-left: 100px; */
+      margin-bottom: 10px;
+      padding: 10px;
+      /* border-radius: 20px; */
+      place-content: center;
+      box-shadow: 10px 5px 15px#999;
+      /* height: auto; */
+    }
+    .form-int{
+      font-size: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 30px;
   }
+  .form-int div input{
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid seagreen;
+    padding: 5px;
+    margin: auto;
+    width: 100%;
+}
+label{
+  margin-top: 20px;
+}
+  .form h3 {
+    font-family:  SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0px 10px 20px;
+    width: 100%;
+  }
+  contact-us{
+    text-align: center;
+  }
+    #submit{
+      place-content: center;
+      border:none;
+      font-family: SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+      background-color: seagreen;
+      border-radius: 20px;
+      padding: 8px;
+      cursor: pointer;
+      color: whitesmoke;
+      font-size: 20px;
+      margin-left: auto;
+      /* margin: auto; */
+     }
+    footer{
+      padding-top: 0px;
+      margin-top: 0px;
+    }
+    hr{
+      margin-bottom: 0px;
+    }
 
-  @media screen and (max-width: 700px){
+   
+  }
+/* Media Queries */
+  @media screen and (max-width: 1100px){
     .services{
       display: grid;
       grid-template-columns: 0.5fr;
+    }
+    .nav{
+      /* position: fixed; */
+      width: 100%;
     }
     
     .image-area{
@@ -189,6 +355,7 @@ a{
       padding-bottom: 200px;
       background-position: center center;
       background-size: cover;
+      width: 100%;
   }
 
   }
