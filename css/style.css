@@ -295,12 +295,22 @@ a{
     padding: 10px;
     text-align: center;
   }
+  .hr{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    height: 2px;
+    border: none;
+    width: 330px;
+    background-color: rgb(0, 114, 66);
+
+  }
   
   hr {
     margin-bottom: 20px;
     margin-top: 10px;
     height: 2px;
     border: none;
+    /* width: 200px; */
     background-color: rgb(0, 114, 66);
   }
   
@@ -374,7 +384,7 @@ a{
       float: left;
     }
     .social-media{
-      border: 1px solid red;
+  
       padding: 2px;
       margin: auto;
     }
