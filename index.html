@@ -4,23 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="favicon.ico" />
-    <title>Responsive Website</title>
+    <title>Buy me A Coffee </title>
   </head>
 
   <body>
     <!-- Navbar -->
     <div class="nav">
       <ul>
-        <img src="images/bmc-new-logo.webp" id="logo" alt="" />
-        <li>Home</li>
-        <li>Services</li>
-        <li>Support</li>
-        <li>Contact</li>
+        <div class="cancel" id="cancel" >
+          &times;
+        </div>
+        <img src="images/bmc-new-logo.webp" class="logo" id="logo" alt="" />
+        <!-- <li id="li" ><i class="fas fa-bars"></i></li>  -->
+        <li class="menu" >Home</li>
+        <li class="menu ">Services</li>
+        <li  class="menu" >Support</li>
+        <li  class="menu" >Contact</li>
         
       </ul>
     </div>
+    <ul class="c">
+      <li id="li" ><i class="fas fa-bars"></i></li> 
+    </ul>
     <!-- Main Body Begins -->
     <div class="wrapper">
       <div class="image-area">
@@ -33,6 +41,8 @@
         the grand prizes, Bonus Stars, free drinks and more.*
        <br> <button>Learn More</button>
       </div>
+      
+    <hr/>
 
       <div class="image-container">
         <div class="services centered-container">
@@ -52,47 +62,59 @@
     <div class="social-media">
       <h2>Follow us on social media</h2>
       <br />
-      <img id="img" src="images/spotify-brands.svg" />
-      <img id="img" src="images/facebook-square-brands.svg" />
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter"></i>
+      <!-- <img id="img" src="images/facebook-square-brands.svg" />
       <img id="img" src="images/twitter-square-brands.svg" />
       <img id="img" src="images/instagram-square-brands.svg" />
-      <img id="img" src="images/youtube-square-brands.svg" />
+      <img id="img" src="images/youtube-square-brands.svg" /> -->
     </div>
+
     <div class="contact">
-      <div class="form">
-         <div class="contact-us">
-          <h3>Contact Us </h3>
-         </div>
-          <form class="form-int" action="">
-              <div class="firstName">
-                  <label for="fname">First name:</label><br>
-                  <input type="text" id="fname" name="fname" placeholder="Name"><br>
-              </div>
-              <div class="lastName">
-                  <label for="lname">Last name:</label><br>
-                  <input type="text" id="lname" name="lname" placeholder="Name"><br><br>
-              </div>
-              <div class="email">
-                  <label for="fname">Email:</label><br>
-                  <input type="email" id="email" name="fname" placeholder="Email"><br>
-              </div>
-              <div class="number">
-                  <label for="lname">Mobile Number:</label><br>
-                  <input type="tel" id="lname" name="lname" placeholder="Mobile Number"><br><br>
-              </div>
-              <div class="textArea">
-                  <textarea name="" id="" cols="20" rows="5"></textarea>
-                  Write your message above
-              </div>
-             
-              <!-- <input class="sign" type="submit" value="Submit" id="submit" > -->
-          </form>
-          <div class="submit">
-            <button id="submit">Submit</button>
-          </div>
+      <div class="contact-banner">
+        <h1>Contact Us</h1>
+        <p class="contact-description">
+          We'd really love to hear from you! Please fill in the form below and
+          submit
+        </p>
       </div>
-      
-  </div>
+  <!-- Forms -->
+<div class="form">
+  <form name="contact-form">
+    <div class="form-control">
+      <label>Full Name</label>
+      <input name="name"
+        placeholder="First and Last Name" />
+      <div class="error hide">Name is required</div>
+    </div>
+
+    <div class="form-control">
+      <label>Email</label>
+      <input
+        name="email"
+        placeholder="e.g. your_email@example.com"
+      />
+      <div class="error hide">Email is invalid</div>
+    </div>
+
+    <div class="form-control">
+      <label>Phone</label>
+      <input name="phone"
+      ></input>
+      <div class="error hide">Phone is invalid</div>
+    </div>
+
+    <div class="form-control">
+      <label>Message</label>
+      <textarea name="message"></textarea>
+      <div class="error hide">Message is required</div>
+    </div>
+
+    <hr/>
+
+    <button type="submit">SUBMIT FORM</button>
+  </form>
 </div>
 
     <!-- Main Body Ends -->
@@ -100,207 +122,8 @@
     <footer>
       <p>© 2021 Buy me A Coffee Company. All rights reserved</p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/menudrop.js" charset="utf-8"></script> 
+    <script src="js/contact.js" charset="utf-8"></script>
   </body>
 </html>
-<!-- 
-    body{
-    background-color: whitesmoke;
-    color: black ;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0px;
-    margin: 0px;
-}
-body p{
-  font-family:  SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
-}
-
-.nav{
-    background-color: seagreen;
-    color: white;
-    height: auto;
-}
-ul{
-  text-align: center;
-}
-ul img {
-cursor: pointer;
-  width: 200px;
-}
-.nav ul {
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-}
-.nav ul li {
-     padding: 16px;
-     text-align: center;
-     font-size: 1.2rem;
-     cursor: pointer;
-     transition: background-color 0.2s;
-     /* border: 1px solid white; */
-}
-.nav ul li:hover{
-    background-color: whitesmoke;
-    color: black;
-} 
-a{
-  text-decoration: none;
-}
-
-.image-area{
-    background-image: url('../images/home3.jpg');
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-position: center center;
-    background-size: cover;
-}
-.centered-container {
-    max-width: 1020px;
-    margin: 0px auto;
-    padding: 16px;
-  }
-.image-text {
-    text-align: center;
-    color: whitesmoke;
-    font-size: 2.5rem;
-    font-family:  SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  }
-  .intro-text {
-    color: black;
-    font-size: 1.5rem;
-    font-family:  SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  button{
-    border:none;
-    background-color: seagreen;
-    border-radius: 20px;
-    padding: 8px;
-    cursor: pointer;
-    color: whitesmoke;
-    font-size: 20px;
-  }
-
-  .single-service {
-    text-align: center;
-
-  }
-  .services {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 50px;
-    place-content: center;
-  }
-  .caffe img {
-    width:500px;
-  
-  }
-  .snacks img {
-    width:500px;
-  }
-  .snacks p{
-    text-align: center;
-  font-family:  SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  font-weight: bold;
-  }
-  .caffe p {
-  text-align: center;
-  font-family:  SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  font-weight: bold;
-  }
-  .social-media{
-    text-align: center;
-    margin: 0px;
-    padding: 5px;
-  
-  }
-  .social-media h2{
-    visibility: hidden;
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
-    margin-bottom: 0px;
-    
-  }
-  #img{
-    margin-left: 50px;
-    width: 30px;
-    cursor: pointer;
-  }
-
-  .forms{
-    border: 1px solid red;
-    padding: 10px;
-    text-align: ;
-  }
-  footer p{
-    text-align: center;
-    font-family:  SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  
-  }
-  /* Media Queries  */
-  @media screen and (min-width: 700px) {
-    .nav ul {
-      text-align: center;
-    }
-  
-    .nav ul li {
-      display: inline-block;
-      border-bottom: 0px;
-      text-align: left;
-    }
-    /* ul{
-      text-align: start;
-    } */
-    ul img {
-      width: 150px;
-      margin-right: 700px;
-      margin-top: 5px;
-    }
-  
-    .single-service {
-      width: 50%;
-      float: left;
-    }
-    .social-media{
-      display: inline-block;
-      width: 100%;
-      padding: 5px;
-      text-align: center;
-      margin-bottom: 0px;
-    
-    }
-    .social-media h2{
-      visibility: visible;
-      text-align: center;
-      margin: 0px;
-    }
-    #img{
-      margin: 5px;
-      margin-bottom: 0px;
-      width: 30px;
-      height: 40px;
-      display: inline-block;
-      cursor: pointer;
-  
-    }
-  }
-
-  @media screen and (max-width: 700px){
-    .services{
-      display: grid;
-      grid-template-columns: 0.5fr;
-    }
-    
-    .image-area{
-      padding-top: 200px;
-      padding-bottom: 200px;
-      background-position: center center;
-      background-size: cover;
-  }
-
-  }
- -->
