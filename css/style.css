@@ -2,12 +2,12 @@ body{
     background-color: whitesmoke;
     color: black ;
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
     padding: 0px;
     margin: 0px;
 }
 body p{
-  font-family:  SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 .wrapper{
   background-color: whitesmoke;
@@ -22,7 +22,6 @@ body p{
 }
 ul{
   text-align: center;
-  background-color: seagreen;
 }
 ul img {
 cursor: pointer;
@@ -31,14 +30,9 @@ cursor: pointer;
 ul li {
   text-decoration: none;
   list-style: none;
-  background-color: seagreen;
+  /* background-color: seagreen; */
 }
-.menuborder{
-  width: 100%;
-  border: 1px solid red;
-  background-color: seagreen;
 
-}
 .nav ul {
     list-style-type: none;
     padding: 0px;
@@ -49,23 +43,14 @@ ul li {
      text-align: center;
      font-size: 1.2rem;
      cursor: pointer;
+     margin: auto;
      transition: background-color 0.2s;
-     /* border: 1px solid white; */
 }
-.menu:hover{
-    background-color: whitesmoke;
-    color: black;
-} 
+ 
 #li:hover{
   background-color: none;
+}
 
-}
-a{
-  text-decoration: none;
-}
-/* #logo{
-  display: none;
-} */
 .menu{
   display: none;
 }
@@ -73,6 +58,8 @@ a{
   position: absolute;
   top: 5px;
   left: 5px;
+  font-size: 35px;
+  cursor: pointer;
 }
 
 .cancel{
@@ -83,6 +70,7 @@ a{
   cursor: pointer;
 }
 .image-area{
+  width: 100%;
     background-image: url('../images/home3.jpg');
     margin-top: 20px;
     padding-top: 200px;
@@ -98,7 +86,7 @@ a{
 .image-text {
     text-align: center;
     color: white;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-family:  SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
   }
   .intro-text {
@@ -149,14 +137,16 @@ a{
   font-family:  SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: bold;
   margin-bottom: 0px;
-  padding: 5px;
+  padding: 15px;
   }
   .caffe p {
   text-align: center;
-  font-family:  SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: bold;
-  margin-bottom: 0px;
-  padding: 5px;
+  margin: auto;
+  width: 50%;
+  left: 5px;
+  padding: 15px;
   }
   .social-media{
     /* padding: 5px; */
@@ -268,6 +258,7 @@ a{
   
   button {
     color: black;
+    margin-top: 20px;
     padding: 5px;
     border: 1px solid seagreen (0, 114, 66);
     border-radius: 10px;
@@ -287,7 +278,6 @@ a{
   }
   .form{
     margin: 10px auto 10px auto;
-    border: 1px solid seagreen;
     width: 50%;
     height: 50%;
   }
@@ -355,6 +345,24 @@ a{
     .fa-bars{
       display: none;
     }
+    .nav ul li {
+      padding: 15px 15px 5px 15px;
+      text-align: center;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.2s;
+      /* border: 1px solid white; */
+ }
+
+  ul li:hover {
+    border-bottom: 2px solid yellow;
+    transition: 0.3s;
+
+  }
+  .menu{
+    top: 0px;
+    padding: 5px;
+  }
     #logo{
         display:block;
         margin-top: 0px;
@@ -386,13 +394,29 @@ a{
       background-size: auto auto ;
       margin: 0px;
   }
+  .snacks p{
+    text-align: center;
+    font-family: SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    margin-bottom: 0px;
+    padding: 15px;
+    /* border: 1px solid red; */
+    }
+    .caffe p {
+    text-align: center;
+    font-family: SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    margin-bottom: 0px;
+    width: auto;
+    padding: 15px;
+    /* border: 1px solid red; */
+    }
   
     .single-service {
       width: 50%;
       float: left;
     }
     .social-media{
-  
       padding: 2px;
       margin: auto;
     }
@@ -405,14 +429,14 @@ a{
       margin: auto;
       width: 150px;
     }
-    #img{
+    /* #img{
       margin: 5px;
       margin-bottom: 0px;
       width: 30px;
       height: 40px;
       display: inline-block;
       cursor: pointer;
-    }
+    } */
     .form {
       width: 500px;
       margin-bottom: 10px;
@@ -422,7 +446,7 @@ a{
     }
 
 label{
-  margin-top: 10px;
+  margin-top: 5px;
 }
   .form h3 {
     font-family:SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
