@@ -12,7 +12,10 @@ body p{
 .wrapper{
   background-color: whitesmoke;
 }
-
+.c{
+  margin: 0px 0px 0px 0px;
+  background-color: seagreen;
+}
 .nav{
     background-color: seagreen;
     color: white;
@@ -86,12 +89,12 @@ ul li {
 .image-text {
     text-align: center;
     color: white;
-    font-size: 2.3rem;
+    font-size: 1.5rem;
     font-family:  SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
   }
   .intro-text {
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family:  SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
     text-align: center;
     padding-top: 50px;
@@ -104,7 +107,7 @@ ul li {
     cursor: pointer;
     outline: none;
     color: black;
-    font-size: 20px;
+    font-size: 15px;
     transition: all 0.5s;
     background-color: white ;
     border: 1px solid seagreen;
@@ -288,7 +291,7 @@ ul li {
   .hr{
     margin-bottom: 20px;
     margin-top: 10px;
-    height: 2px;
+    height: 1px;
     border: none;
     width: 330px;
     background-color: rgb(0, 114, 66);
@@ -298,7 +301,7 @@ ul li {
   hr {
     margin-bottom: 20px;
     margin-top: 10px;
-    height: 2px;
+    height: 1px;
     border: none;
     background-color: rgb(0, 114, 66);
   }
@@ -394,13 +397,41 @@ ul li {
       background-size: auto auto ;
       margin: 0px;
   }
+  .image-text {
+    text-align: center;
+    color: white;
+    font-size: 2.3rem;
+    font-family:  SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  }
+  .intro-text {
+    color: black;
+    font-size: 1.5rem;
+    font-family:  SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  button{
+    border:none;
+    border-radius: 20px;
+    padding: 8px;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    font-size: 20px;
+    transition: all 0.5s;
+    background-color: white ;
+    border: 1px solid seagreen;
+    border-radius: 20px;
+  }
   .snacks p{
     text-align: center;
     font-family: SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-weight: bold;
     margin-bottom: 0px;
-    padding: 15px;
-    /* border: 1px solid red; */
+    padding: 5px;
+    font-size: 20px;
+   
     }
     .caffe p {
     text-align: center;
@@ -408,8 +439,8 @@ ul li {
     font-weight: bold;
     margin-bottom: 0px;
     width: auto;
-    padding: 15px;
-    /* border: 1px solid red; */
+    padding: 10px;
+    font-size: 20px;
     }
   
     .single-service {
@@ -429,14 +460,7 @@ ul li {
       margin: auto;
       width: 150px;
     }
-    /* #img{
-      margin: 5px;
-      margin-bottom: 0px;
-      width: 30px;
-      height: 40px;
-      display: inline-block;
-      cursor: pointer;
-    } */
+
     .form {
       width: 500px;
       margin-bottom: 10px;
@@ -469,6 +493,23 @@ label{
     footer{
       padding-top: 0px;
       margin-top: 0px;
+    }
+    .hr{
+      margin-bottom: 20px;
+      margin-top: 10px;
+      height: 2px;
+      border: none;
+      width: 330px;
+      background-color: rgb(0, 114, 66);
+  
+    }
+    
+    hr {
+      margin-bottom: 20px;
+      margin-top: 10px;
+      height: 2px;
+      border: none;
+      background-color: rgb(0, 114, 66);
     }
    
   }

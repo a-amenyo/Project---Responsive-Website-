@@ -4,6 +4,7 @@ $('.fas').on("click", ()=>{
     $('#cancel').slideDown();
     $('.logo').slideDown();
 });
+// To close menu 
 $('#cancel').on("click", ()=>{
     // point to the class of the add to cart pop up card 
     $('.menu').slideUp();
