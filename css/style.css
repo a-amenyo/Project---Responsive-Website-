@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 body{
     background-color: whitesmoke;
     color: black ;
@@ -129,11 +133,11 @@ ul li {
     place-content: center;
   }
   .caffe img {
-    width:500px;
+    width:350px;
   
   }
   .snacks img {
-    width:500px;
+    width:350px;
   }
   .snacks p{
   text-align: center;
@@ -152,10 +156,9 @@ ul li {
   padding: 15px;
   }
   .social-media{
-    /* padding: 5px; */
     margin: 0px auto auto auto;
     text-align: center;
-    /* border: 1px solid red; */
+
     padding: 0px;
   
   }
@@ -291,9 +294,10 @@ ul li {
   .hr{
     margin-bottom: 20px;
     margin-top: 10px;
+    margin: auto;
     height: 1px;
     border: none;
-    width: 330px;
+    width: 300px;
     background-color: rgb(0, 114, 66);
 
   }
