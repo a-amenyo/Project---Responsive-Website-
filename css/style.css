@@ -6,7 +6,7 @@ body{
     padding: 0px;
     margin: 0px;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 body p{
   font-family: SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
