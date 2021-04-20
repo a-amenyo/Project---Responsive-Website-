@@ -77,11 +77,9 @@ ul li {
 .image-area{
   width: 100%;
     background-image: url('../images/home3.jpg');
-    margin-top: 20px;
-    padding-top: 200px;
+  
     padding-bottom: 200px;
-    background-position: center center;
-    background-size: cover;
+    background-size: contain;
 }
 .centered-container {
     max-width: 1020px;

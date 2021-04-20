@@ -8,7 +8,5 @@ $('.fas').on("click", ()=>{
 $('#cancel').on("click", ()=>{
     // point to the class of the add to cart pop up card 
     $('.menu').slideUp();
-    $('.fas').slideUp();
-    $('.nav').slideUp(); 
-    $('.logo').slideUp();
+    $('#cancel').slideUp(); 
 });
