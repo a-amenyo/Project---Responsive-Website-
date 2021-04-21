@@ -63,8 +63,8 @@ function display (){
   // get message
   let textInMessage = document.querySelector("textarea[name='message']").value;
 
-  alert("Thanks for your Message.If we got that right, we have your " +"\n Name : " +textInName + "  " + 
-  "Email : " + textInEmail + " " + "Phone : " + textInNumber + "    " + "Message : " + textInMessage   ); 
+  alert("Thanks for your Message.If we got that right, we have your" +"\n Name : " +textInName  + 
+  "\nEmail : " + textInEmail+ "\nPhone : " + textInNumber + "\nMessage : " + textInMessage   ); 
 }
 
 let submitBtn = document.getElementById('submit'); 
