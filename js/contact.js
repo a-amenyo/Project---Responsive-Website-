@@ -46,7 +46,7 @@ form.addEventListener("submit", (event) => {
   shouldValidate = true;
   validateInputs();
   if (isFormValid) {
-    
+    submitBtn.addEventListener("click", display ); 
   }
 });
 
@@ -68,4 +68,3 @@ function display (){
 }
 
 let submitBtn = document.getElementById('submit'); 
-submitBtn.addEventListener("click", display ); 
