@@ -26,7 +26,8 @@ let isFormValid = false;
 
 let validateInputs = () => {
   console.log("we are here");
-  if (!shouldValidate) return;
+  if (!shouldValidate) 
+  return;
 
   isFormValid = true;
   inputFields.forEach((input) => {
