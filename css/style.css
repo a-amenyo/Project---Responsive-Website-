@@ -314,7 +314,7 @@ ul li {
    background-color: whitesmoke;
   }
 
-  footer p{
+  footer{
     text-align: center;
     font-family:  SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
     color: seagreen;
@@ -499,6 +499,7 @@ label{
     footer{
       padding-top: 0px;
       margin-top: 0px;
+      text-align: center;
     }
     .hr{
       margin-bottom: 20px;
